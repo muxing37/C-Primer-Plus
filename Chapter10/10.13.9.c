@@ -18,15 +18,18 @@ int main()
 }
 
 void copy(int n,int m,double t[n][m],double s[n][m]) {
-    for (int i=0;i<n;i++)
-        for (int j=0;j<m;j++)
+    for (int i=0;i<n;i++) {
+        for (int j=0;j<m;j++) {
             t[i][j]=s[i][j];
+        }
+    }
 }
 
 void print(int n, int m,double arr[n][m]) {
     for (int i=0;i<n;i++) {
-        for (int j=0;j<m;j++)
+        for (int j=0;j<m;j++) {
             printf("%6.2f ",arr[i][j]);
+        }
         printf("\n");
     }
 }
