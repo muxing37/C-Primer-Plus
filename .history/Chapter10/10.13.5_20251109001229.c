@@ -1,0 +1,26 @@
+#include <stdio.h>
+double cha(double *,int);
+int main()
+{
+    double a[5000];
+    int i,j,c,b;
+    for(i=0;j!=0;i++) {
+        j=scanf("%lf",&a[i]);
+    }
+    c=cha(a,i);
+    printf("%g",c);
+    return 0;
+}
+double cha(double *a,int n) {
+    int i,j,t;
+    for(i=1;i<n;i++) {
+        for(j=i;j<n;j++) {
+            if(a[j-1]>a[j]) {
+                t=a[j-1];
+                a[j-1]=a[j];
+                a[j]=t;
+            }
+        }
+    }
+    return a[n-1]-a[0];
+}

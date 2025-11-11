@@ -1,0 +1,10 @@
+#include <stdio.h>
+int set_mode(int mode) {
+
+}
+void get_info() {
+
+}
+void show_info() {
+    
+}
